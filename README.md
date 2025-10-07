@@ -1,4 +1,5 @@
-A simple and interactive Telegram bot that helps users buy, rent, or sell properties within a local community or housing colony.
+A simple and interactive Telegram bot that helps users buy, rent, or sell properties within a local community or housing colony 🏠
+
 
 🚀 Features
 
