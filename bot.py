@@ -5,6 +5,12 @@ import os
 
 # Get token and form links from environment variables
 BOT_TOKEN = os.getenv("8161441063:AAEOlvzIHOV1UQQ3BqOrEvXvsIBJfihpCwk")
+print(f"DEBUG: BOT_TOKEN value -> {BOT_TOKEN}")  # Ensure to set this environment variable securely
+
+
+
+
+
 BUY_FORM_LINK = os.getenv("https://l1nq.com/sKilM")
 RENT_FORM_LINK = os.getenv("https://sl1nk.com/3WLBB")
 SELL_FORM_LINK = os.getenv("https://l1nq.com/gD8S5")

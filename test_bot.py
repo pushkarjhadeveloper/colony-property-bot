@@ -22,3 +22,11 @@
 
 # if __name__ == "__main__":
 #     main()
+
+
+
+
+
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # Ensure to set this environment variable securely
+print("BOT_TOKEN from environment:", BOT_TOKEN)
