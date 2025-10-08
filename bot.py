@@ -8,8 +8,6 @@ import os
 BOT_TOKEN = "8161441063:AAEOlvzIHOV1UQQ3BqOrEvXvsIBJfihpCwk"  # replace with your actual token
 print(f"DEBUG: BOT_TOKEN value -> {BOT_TOKEN}")  # Ensure to set this environment variable securely
 
-
-
 BUY_FORM_LINK = "https://l1nq.com/sKilM"
 RENT_FORM_LINK = "https://sl1nk.com/3WLBB"
 SELL_FORM_LINK = "https://l1nq.com/gD8S5"
