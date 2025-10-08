@@ -1,19 +1,18 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from telegram.request import HTTPXRequest
+import re
 import os
 
 # Get token and form links from environment variables
-BOT_TOKEN = os.getenv("8161441063:AAEOlvzIHOV1UQQ3BqOrEvXvsIBJfihpCwk")
+BOT_TOKEN = "8161441063:AAEOlvzIHOV1UQQ3BqOrEvXvsIBJfihpCwk"  # replace with your actual token
 print(f"DEBUG: BOT_TOKEN value -> {BOT_TOKEN}")  # Ensure to set this environment variable securely
 
 
 
-
-
-BUY_FORM_LINK = os.getenv("https://l1nq.com/sKilM")
-RENT_FORM_LINK = os.getenv("https://sl1nk.com/3WLBB")
-SELL_FORM_LINK = os.getenv("https://l1nq.com/gD8S5")
+BUY_FORM_LINK = "https://l1nq.com/sKilM"
+RENT_FORM_LINK = "https://sl1nk.com/3WLBB"
+SELL_FORM_LINK = "https://l1nq.com/gD8S5"
 
 # --- Command Handlers ---
 
@@ -66,7 +65,7 @@ def main():
     app.add_handler(CommandHandler("sell", sell))
 
     # Greeting handler
-    app.add_handler(MessageHandler(filters.TEXT & filters.Regex(r'^(?i)(hi|hello)$'), handle_greetings))
+    app.add_handler(MessageHandler(filters.TEXT & filters.Regex(r'(?i)^(hi|hello)$'), handle_greetings))
 
     # Unknown message fallback
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_unknown))
